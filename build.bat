@@ -7,3 +7,4 @@ if not exist bin\main\cpp (
 
 @REM сборочные шаги
 g++ -std=c++17 -c src\main\cpp\main.cpp -o bin\main\cpp\main.o
+g++ -std=c++17 bin\main\cpp\main.o -o bin\gbs.exe
