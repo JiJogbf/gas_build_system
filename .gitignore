@@ -1,3 +1,16 @@
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles
+*.exe
+*.lib
+*.o
+*.a
+Makefile
+.vscode
+html
+latex
+test.txt
+
 bin
 libs
 trash

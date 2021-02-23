@@ -1,3 +1,5 @@
+#include <gas\core\args.hpp>
+
 int main(int argc, char** argv){
     // чтение файла проекта
     
