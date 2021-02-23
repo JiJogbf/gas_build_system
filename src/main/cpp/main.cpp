@@ -1,6 +1,8 @@
 #include <gas\core\args.hpp>
 
 int main(int argc, char** argv){
+    gas::base_args* args = new gas::safe_args(
+        new gas::args(argc, argv));
     // чтение файла проекта
     
     // подготовка необходимых ресурсов
@@ -10,5 +12,6 @@ int main(int argc, char** argv){
     
     // выполнение задач
     
+    delete args;
     return 0;
 }
