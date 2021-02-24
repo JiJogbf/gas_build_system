@@ -1,25 +1,18 @@
 #include <gas\core\args.hpp>
 
 #include "gas\bs\artefact.hpp"
+#include "gas\bs\config.hpp"
 
 int main(int argc, char** argv){
-    gas::base_args* args = new gas::safe_args(
-        new gas::args(argc, argv));
-    gas::bs::artefact* art = new gas::bs::artefact();
-    
-    // чтение файла проекта
+    gas::bs::artefact* art = new gas::bs::artefact(
+        new gas::bs::config(
+            new gas::safe_args(
+                new gas::args(argc, argv)
+            )
+        )
+    ); 
     art->load();
-    
-    // подготовка необходимых ресурсов
-    
-    // подготовка очреди задач по файлу 
-    // проекта
-    
-    // выполнение задач
-
-
+    art->execute();
     delete art;
-    delete args;
-
     return 0;
 }

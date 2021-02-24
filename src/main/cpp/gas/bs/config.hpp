@@ -1,6 +1,6 @@
 #pragma once
 
-#include "config.hpp"
+#include <gas\core\args.hpp>
 
 namespace gas{
 namespace bs{
@@ -10,14 +10,12 @@ namespace bs{
  * нужно получить в ходе выполнения оприеделённых 
  * задач
 */
-class artefact: public obj{
+class config{
 private:
-    config* _cfg;
+    gas::base_args* _args;
 public:
-    artefact(config* cfg);
-    ~artefact() override;
-    void execute();
-    void load();
+    config(gas::base_args* args);
+    ~config();
 };
 
 }
