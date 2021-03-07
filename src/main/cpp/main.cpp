@@ -1,4 +1,4 @@
-#include <gas\core\args.hpp>
+#include <gas\core\args\safe_args.hpp>
 
 #include "gas\bs\artefact.hpp"
 #include "gas\bs\config.hpp"

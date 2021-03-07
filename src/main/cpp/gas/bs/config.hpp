@@ -1,6 +1,6 @@
 #pragma once
 
-#include <gas\core\args.hpp>
+#include <gas\core\args\args.hpp>
 
 namespace gas{
 namespace bs{
